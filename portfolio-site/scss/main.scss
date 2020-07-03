@@ -1,14 +1,15 @@
 @import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-    @include background;
-    background: $primary-color;
-    color: white;
-    height: 100%;
+  @include background;
+  background: $primary-color;
+  color: #fff;
+  height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
