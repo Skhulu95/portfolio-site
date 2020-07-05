@@ -96,6 +96,15 @@
     }
   }
 
+  .picture {
+      width: 300px;
+      height: 300px;
+      background: url('../img/portrait.jpg');
+      border: 50%;
+      border: double 10px $secondary-color;
+    }
+  }
+
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
@@ -117,7 +126,7 @@
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: 300;
-    color: set-text-color($primary-color);
+    color:set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
