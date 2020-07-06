@@ -439,3 +439,25 @@ input[type=submit] {
         text-align: left;
     }
 }
+
+/* About Section */
+
+#about{
+  padding-top: 30px;
+}
+
+#resume {
+  padding-top: 30px;
+}
+
+#aboutPara {
+  font-size: 150%;
+}
+
+/* Education and Experience */
+#work2, #work1, #cput, #uwc, #stellenbosch, #fezeka, #lifeChoices {
+  text-shadow: 1px 1px 1px black;
+  padding: 10px;
+  background-color:rgba(255, 255, 255, 0.2);
+  margin-bottom: 2%;
+}
