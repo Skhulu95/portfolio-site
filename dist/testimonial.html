@@ -9,53 +9,37 @@
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css" />
     <style>
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-    
-        .testimonialContainer {
-            border: 2px solid rgba(0, 0, 0, 0.363);
-            background-color: rgb(207, 235, 218);
+        .testimonial-container {
+            border: 2px solid #ccc;
+            background-color: black;
             border-radius: 5px;
             padding: 16px;
-            margin: 16px 0;
+            margin: 16px 0
         }
     
-        .profilePic {
-            width: 100px;
-            height: 100px;
-        }
-    
-        .testimonialContainer::after {
+        .testimonial-container::after {
             content: "";
             clear: both;
             display: table;
         }
     
-        .testimonialContainer img {
+        .testimonial-container img {
             float: left;
             margin-right: 20px;
             border-radius: 50%;
         }
     
-        .testimonialContainer span {
-            font-size: 24px;
-            font-weight: 500;
+        .testimonial-container span {
+            font-size: 20px;
             margin-right: 15px;
-            color: purple;
-        }
-    
-        .testimonialContainer p {
-            font-size: 18px;
-            font-style: oblique;
         }
     
         @media (max-width: 500px) {
-            .testimonialContainer {
+            .testimonial-container {
                 text-align: center;
             }
     
-            .testimonialContainer img {
+            .testimonial-container img {
                 margin: auto;
                 float: none;
                 display: block;
@@ -75,7 +59,7 @@
 
         <nav class="menu">
             <div class="menu-branding">
-                <div class="photo"><img src="../dist/img/portrait.jpg" alt="Thabiso Klip" style="width:500px;height:600px;"></div>
+                <div class="photo"><img src="../dist/img/portrait_2.jpg" alt="Thabiso Klip" style="width:500px;height:600px;"></div>
             </div>
             <ul class="menu-nav">
                 <li class="nav-item">
@@ -107,20 +91,21 @@
         </nav>
     </header>
 
-    <main id="home">
+    <main>
     <!-- TESTIMONIALS -->
-        <h1>Testimonials</h1>
-        <div class="testimonialContainer">
-            <img class="profilePic"
-                src="https://images.pexels.com/photos/614810/pexels-photo614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-            <span>James Anderson</span>
-            <p>Thabiso is a hard working and comitted individual</p>
+        <h1><i>Testimonials...</i></h1>
+        
+        
+        <div class="testimonial-container">
+            <img src="../dist/img/ariya-lucas.jpg" alt="Ariya" style="width:200px">
+            <p><span>Ariya Lucas.</span> Coding Lecture at Life Choices Academy.</p>
+            <p>John Doe saved us from a web disaster.</p>
         </div>
-        <div class="testimonialContainer">
-            <img class="profilePic"
-                src="https://images.pexels.com/photos/2128807/pexels-photo2128807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-            <span>Steve Boulder</span>
-            <p>Thabiso is great at managing people</p>
+        
+        <div class="testimonial-container">
+            <img src="../dist/img/thapelo-tsotetsi.jpg" alt="Thapelo" style="width:200px">
+            <p><span>Thapelo Tsotetsi.</span> Coding Lecture at Life Choices Academy.</p>
+            <p>No one is better than John Doe.</p>
         </div>
     <!-- END OF TESTIMONIALS -->
     </main>
