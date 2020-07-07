@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/23ffdf8029.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        .testimonialContainer {
+            border: 2px solid rgba(0, 0, 0, 0.363);
+            background-color: rgb(207, 235, 218);
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+    
+        .profilePic {
+            width: 100px;
+            height: 100px;
+        }
+    
+        .testimonialContainer::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    
+        .testimonialContainer img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+    
+        .testimonialContainer span {
+            font-size: 24px;
+            font-weight: 500;
+            margin-right: 15px;
+            color: purple;
+        }
+    
+        .testimonialContainer p {
+            font-size: 18px;
+            font-style: oblique;
+        }
+    
+        @media (max-width: 500px) {
+            .testimonialContainer {
+                text-align: center;
+            }
+    
+            .testimonialContainer img {
+                margin: auto;
+                float: none;
+                display: block;
+            }
+        }
+    </style>
+    <title>Testimonial</title>
+</head>
+
+<body id="bg-img">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="photo"><img src="../dist/img/portrait.jpg" alt="Thabiso Klip" style="width:500px;height:600px;"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        My Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact Me
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="testimonial.html" class="nav-link">
+                        Testimonial
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+    <!-- TESTIMONIALS -->
+        <h1>Testimonials</h1>
+        <div class="testimonialContainer">
+            <img class="profilePic"
+                src="https://images.pexels.com/photos/614810/pexels-photo614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <span>James Anderson</span>
+            <p>Thabiso is a hard working and comitted individual</p>
+        </div>
+        <div class="testimonialContainer">
+            <img class="profilePic"
+                src="https://images.pexels.com/photos/2128807/pexels-photo2128807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <span>Steve Boulder</span>
+            <p>Thabiso is great at managing people</p>
+        </div>
+    <!-- END OF TESTIMONIALS -->
+    </main>
+
+    <script src="js/main.js"></script>
+    <footer id="main-footer">
+        &copy; 2020 Created by Thabiso Klip
+    </footer>
+</body>
+
+</html>

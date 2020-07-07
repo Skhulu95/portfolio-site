@@ -22,7 +22,7 @@
 
         <nav class="menu">
             <div class="menu-branding">
-                <div class="portrait"></div>
+                <div class="photo"><img src="../dist/img/portrait.jpg" alt="Thabiso Klip" style="width:500px;height:600px;"></div>
             </div>
             <ul class="menu-nav">
                 <li class="nav-item">
@@ -44,6 +44,11 @@
                     <a href="contact.html" class="nav-link">
                         How To Reach Me
                     </a>
+                </li>
+                <li class="nav-item ">
+                <a href="testimonial.html" class="nav-link">
+                    Testimonial
+                </a>
                 </li>
             </ul>
         </nav>
@@ -75,48 +80,39 @@
         </head>
 
         <div class="contact">
-            <h3>Email Me</h3>
-            <form method="post" name="contact_form" action="contact-form-handler.php">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div>
-                    <label for="company">Company</label>
-                    <input type="text" id="company" required>
-                </div>
-                <div>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div>
-                    <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" required>
-                </div>
-                <div class="full">
-                    <label for="message">Message</label>
-                    <textarea id="message" required></textarea>
-                </div>
-                <div class="full">
-                    <button>Submit</button>
-                </div>
+            <span class="text-secondary">
+                <h2>Email Me</h2>
+            </span>
+            <form action="https://formspree.io/mvowwqvl" method="POST">
+                <label>Name:</label><br>
+                <input type="name" name="name" /><br>
+                <label>Company:</label><br>
+                <input type="text" name="company" /><br>
+                <label>
+                    Your email:
+                    <input type="text" name="_replyto">
+                </label><br>
+                <label>Phone:</label><br>
+                <input type="tel" name="tel" /><br>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label><br>
+
+                <!-- your other form fields go here -->
+
+                <button type="submit">Send</button>
             </form>
         </div>
-        <script language="JavaScript">
-            var frmvalidator = new Validator("contactform");
-            frmvalidator.addValidation("name", "req", "Please provide your name");
-            frmvalidator.addValidation("company", "req", "Please provide your company name");
-            frmvalidator.addValidation("email", "req", "Please provide your email");
-            frmvalidator.addValidation("email", "email",
-                "Please enter a valid email address");
-            frmvalidator.addValidation("phone", "req", "Please provide your phone number");
-            frmvalidator.addValidation("phone", "number",
-                "Please enter a valid phone number");
+        <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+        <script>
+            window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+            formbutton("create", { action: "https://formspree.io/mvowwqvl" })
         </script>
     </main>
 
     <footer id="main-footer">
-        Copyright &copy; 2020
+    &copy; 2020 Created by Thabiso Klip
     </footer>
 
 
