@@ -54,8 +54,7 @@
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
       width: 300px;
-      height: 300px;
-      background: url("../img/portrait.jpg") style="width:300px;height:300px;;
+      height: 300px;height:300px;";
       border: 50%;
       border: double 10px #f8e806; }
   .menu .nav-item {
@@ -173,7 +172,8 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-    
+
+  
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -222,6 +222,8 @@ main {
 .btn-light {
   background: #c4c4c4;
   color: #333; }
+
+
 
 
 #main-footer {
@@ -291,6 +293,33 @@ main {
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
   color: white; /* White text color */
+}
+
+
+
+
+.card{
+  border: none;
+  flex-wrap: wrap;
+}
+
+
+
+}
+/* menu */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: black(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
 }
 
 .html {width: 90%; background-color: #4CAF50;} /* Green */
