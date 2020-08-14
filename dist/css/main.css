@@ -171,7 +171,7 @@ main {
   border: double 10px #f8e806;}
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
 
   
 .projects {
