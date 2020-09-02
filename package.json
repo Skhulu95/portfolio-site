@@ -5,8 +5,9 @@
   "main": "index.js",
   "homepage": "https://Skhulu95.github.io/portfolio-site",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Thabiso Klip",
   "license": "MIT",
